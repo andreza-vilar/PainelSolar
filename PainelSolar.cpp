@@ -1,11 +1,5 @@
 /*>Discente: Andreza Vilar de Farias
->MatrÌcula: 120210357
->PerÌodo: 2020.2
->Curso: Engenharia ElÈtrica
->Disciplina: TÈcnicas de ProgramaÁ„o
->Turma: 01
->Professor: Marcus Salerno
->Unidade 2 : lvp 4*/
+>Per√≠odo: 2020.2*/
 
 #include <iostream>
 #include <iomanip>
@@ -31,7 +25,7 @@ class Empresa_Solar{
  };
   
   
-//depois do prototipo da classe, cada funÁ„o vai ser implementada
+//depois do prototipo da classe, cada fun√ß√£o vai ser implementada
  void Empresa_Solar :: set_potencia(float pot) {
 	 pot_residencia = pot;
  }
@@ -62,11 +56,11 @@ float Empresa_Solar :: economia(){
  int main (){
 	 setlocale(LC_ALL,"Portuguese");
 	 
-	 Empresa_Solar eficiencia; //instanciaÁ„o dos objetos
+	 Empresa_Solar eficiencia; //instancia√ß√£o dos objetos
 	 float pot;
 	 float gasto;
 	 
-	 cout<<"PotÍncia mensal kwh: "<<endl;
+	 cout<<"Pot√™ncia mensal kwh: "<<endl;
 	 cin >> pot;
 	 cout<<"Gasto mensal em R$: "<<endl;
 	 cin >> gasto;
@@ -76,8 +70,8 @@ float Empresa_Solar :: economia(){
 	 eficiencia.calcula_paineis();
 	
 	 
-	 cout<<"Quantidade de painÈis necess·rios: "<<fixed<< setprecision(2)<<eficiencia.get_paineis()<<endl;
-	 cout<<"¡rea mÌnima para instalaÁ„o : "<<fixed<< setprecision(2)<<eficiencia.calcula_area_minima()<<"m≤"<<endl;
+	 cout<<"Quantidade de pain√©is necess√°rios: "<<fixed<< setprecision(2)<<eficiencia.get_paineis()<<endl;
+	 cout<<"√Årea m√≠nima para instala√ß√£o : "<<fixed<< setprecision(2)<<eficiencia.calcula_area_minima()<<"m¬≤"<<endl;
 	 cout<<"Economia anual: "<<fixed<< setprecision(2)<<eficiencia.economia()<<"R$"<<endl;
 	 
 	 
